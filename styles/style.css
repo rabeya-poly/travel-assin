@@ -138,11 +138,19 @@ gap: 3rem;
         height: 300px;
         filter: blur(70%);
     }
-    .row-1{
+    .row-1,
+    .row-2,
+    .row-3{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 1rem 0;
         gap: 1rem;
+    }
+    .row-2{
+        grid-template-columns: 0.8fr 1.5fr 0.7fr;
+    }
+    .row-3{
+        grid-template-columns: 0.75fr 1.25fr;
     }
     .country-card{
         position: relative;
@@ -157,4 +165,27 @@ gap: 3rem;
         transform: translate( -50%, -50%);
         /* must top,left 50% for transform */
     }
+    /* footer section style */
 
+    .footer-section {
+         background: rgba(19, 19, 24, 0.05);
+         padding: 2rem 0;
+    }
+    .footer section, .logo{
+        margin: 2rem auto;
+    }
+.social{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+.social i{
+    height: 44px;
+    font-size: 24px;
+}
+
+.footer-section hr{
+    margin: 2rem 0;
+}
